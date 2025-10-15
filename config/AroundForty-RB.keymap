@@ -131,8 +131,8 @@
         AutoMouse_Layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &trans  &kp PAGE_UP
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &kp PAGE_DOWN
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
             >;
         };
