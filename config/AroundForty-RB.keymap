@@ -136,7 +136,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_ud_inv>;
+            sensor-bindings = <&scrl_ud_inv>;
         };
     };
 };
