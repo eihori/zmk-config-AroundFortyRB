@@ -43,6 +43,7 @@
 
             tap-ms = <20>;
         };
+
         scroll_up_down_inverted: behavior_sensor_rotate_mouse_wheel_up_down_inverted {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -93,10 +94,10 @@
 
         Mac-Common_Layer {
             bindings = <
-&kp ESCAPE            &trans     &trans     &trans     &trans                           &trans          &trans           &msc MOVE_X(0)  &kp MINUS  &kp BACKSPACE
-&kp TAB               &trans     &trans     &trans     &kp UP_ARROW                     &kp UP_ARROW    &mkp MB1         &msc MOVE_Y(0)  &mkp MB2   &kp PAGE_UP
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans     &mt RIGHT_SHIFT PAGE_DOWN
-&trans                &trans     &trans     &trans     &trans          &trans           &trans          &kp LEFT_ARROW   &trans          &trans     &trans
+&kp ESCAPE            &trans     &trans     &trans     &trans                           &trans          &trans           &trans    &kp MINUS  &kp BACKSPACE
+&kp TAB               &trans     &trans     &trans     &kp UP_ARROW                     &kp UP_ARROW    &mkp MB1         &mkp MB2  &mo 8      &kp PAGE_UP
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans     &mt RIGHT_SHIFT PAGE_DOWN
+&trans                &trans     &trans     &trans     &trans          &trans           &trans          &kp LEFT_ARROW   &trans    &trans     &trans
             >;
         };
 
@@ -127,13 +128,14 @@
             >;
         };
 
-        AutoMouse_Layer {
+        Scroll_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans          &trans           &msc MOVE_X(0)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans          &kp UP_ARROW    &mkp MB1         &msc MOVE_Y(0)  &mkp MB2  &kp PAGE_UP
-&trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans    &kp PAGE_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW   &trans          &trans    &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
             sensor-bindings = <&scroll_up_down_inverted>;
         };
     };
