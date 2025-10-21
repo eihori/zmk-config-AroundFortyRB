@@ -58,10 +58,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q               &kp W         &kp E           &kp R        &kp T                         &kp Y        &kp U           &kp I      &kp O     &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D           &kp F        &kp G                         &kp H        &kp J           &kp K      &kp L     &kp ENTER
-&mt LEFT_SHIFT Z    &kp X         &kp C           &kp V        &kp B        &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
-&mo 2               &kp LEFT_GUI  &lt 4 LEFT_ALT  &lt 4 LANG2  &lt 4 LANG2  &mo 6            &lt 4 LANG1  &kp LEFT_ARROW  &kp SPACE  &lt 7 AT  &lt 2 SLASH
+&kp Q               &kp W           &kp E  &kp R  &kp T                         &kp Y        &kp U           &kp I      &kp O     &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D  &kp F  &kp G                         &kp H        &kp J           &kp K      &kp L     &kp BACKSPACE
+&mt LEFT_SHIFT Z    &kp X           &kp C  &kp V  &kp B        &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
+&kp LEFT_GUI        &lt 2 LEFT_ALT  &mo 4  &mo 4  &lt 2 LANG2  &mo 6            &lt 4 LANG1  &kp LEFT_ARROW  &kp SPACE  &lt 7 AT  &lt 2 SLASH
             >;
         };
 
@@ -76,10 +76,10 @@
 
         Mac-Function_Layer {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH     &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &none          &kp MINUS  &kp BACKSPACE
-&kp TAB          &kp LEFT_GUI       &kp LS(TAB)  &mkp MB1    &mkp MB2             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PLUS   &none
-&trans           &trans             &trans       &trans      &mkp MB3     &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans     &trans
-&trans           &trans             &trans       &trans      &trans       &trans  &trans                &kp SEMI               &trans         &trans     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &none          &kp MINUS  &trans
+&trans           &trans             &trans    &trans      &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PLUS   &trans
+&trans           &trans             &trans    &trans      &trans       &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans     &trans
+&trans           &trans             &trans    &trans      &trans       &trans  &trans                &kp SEMI               &trans         &trans     &trans
             >;
         };
 
@@ -94,10 +94,10 @@
 
         Mac-Common_Layer {
             bindings = <
-&kp ESCAPE            &trans     &trans     &trans     &trans                           &trans          &trans           &trans    &kp MINUS  &kp BACKSPACE
-&kp TAB               &trans     &trans     &trans     &kp UP_ARROW                     &kp UP_ARROW    &mkp MB1         &mkp MB2  &mo 8      &kp PAGE_UP
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans     &mt RIGHT_SHIFT PAGE_DOWN
-&trans                &trans     &trans     &trans     &trans          &trans           &trans          &kp LEFT_ARROW   &trans    &trans     &trans
+&kp ESCAPE            &trans     &trans     &trans     &trans                           &trans  &trans    &mo 8           &kp MINUS       &trans
+&kp TAB               &trans     &trans     &trans     &kp UP_ARROW                     &trans  &mkp MB1  &mkp MB2        &kp UP_ARROW    &trans
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans                &trans     &trans     &trans     &trans          &trans           &trans  &trans    &trans          &trans          &kp RIGHT_SHIFT
             >;
         };
 
