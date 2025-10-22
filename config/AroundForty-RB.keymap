@@ -76,9 +76,9 @@
 
         Mac-Function_Layer {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &none          &kp MINUS  &trans
-&trans           &trans             &trans    &trans      &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PLUS   &trans
-&trans           &trans             &trans    &trans      &trans       &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &none          &kp MINUS  &kp LEFT_BRACKET
+&trans           &trans             &trans    &trans      &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PLUS   &kp RIGHT_BRACKET
+&trans           &trans             &trans    &trans      &trans       &trans  &trans                &trans                 &trans         &trans     &trans
 &trans           &trans             &trans    &trans      &trans       &trans  &trans                &kp SEMI               &trans         &trans     &trans
             >;
         };
@@ -94,10 +94,10 @@
 
         Mac-Common_Layer {
             bindings = <
-&kp ESCAPE            &trans     &trans     &trans     &trans                           &trans  &trans    &mo 8           &kp MINUS       &trans
-&kp TAB               &trans     &trans     &trans     &kp UP_ARROW                     &trans  &mkp MB1  &mkp MB2        &kp UP_ARROW    &trans
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&trans                &trans     &trans     &trans     &trans          &trans           &trans  &trans    &trans          &trans          &kp RIGHT_SHIFT
+&kp ESCAPE            &trans          &kp UP_ARROW    &trans           &trans          &trans  &trans    &mo 8           &kp MINUS       &kp LEFT_BRACKET
+&kp TAB               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans  &mkp MB1  &mkp MB2        &kp UP_ARROW    &kp RIGHT_BRACKET
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans                &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans          &trans          &kp RIGHT_SHIFT
             >;
         };
 
