@@ -58,10 +58,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q               &kp W           &kp E  &kp R  &kp T                         &kp Y        &kp U           &kp I      &kp O     &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D  &kp F  &kp G                         &kp H        &kp J           &kp K      &kp L     &kp BACKSPACE
-&mt LEFT_SHIFT Z    &kp X           &kp C  &kp V  &kp B        &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
-&kp LEFT_GUI        &lt 1 LEFT_ALT  &mo 2  &mo 2  &lt 1 LANG2  &mo 3            &lt 2 LANG1  &kp LEFT_ARROW  &kp SPACE  &lt 6 AT  &lt 1 SLASH
+&kp Q               &kp W           &kp E  &kp R  &kp T                       &kp Y        &kp U      &kp I      &kp O     &kp P
+&mt LEFT_CONTROL A  &kp S           &kp D  &kp F  &kp G                       &kp H        &kp J      &kp K      &kp L     &kp BACKSPACE
+&mt LEFT_SHIFT Z    &kp X           &kp C  &kp V  &kp B        &kp AMPERSAND  &kp N        &kp M      &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
+&kp LEFT_GUI        &lt 1 LEFT_ALT  &mo 2  &mo 2  &lt 1 LANG2  &mo 3          &lt 2 LANG1  &kp MINUS  &kp SPACE  &lt 6 AT  &lt 1 SLASH
             >;
         };
 
@@ -77,9 +77,9 @@
         Mac-Common_Layer {
             bindings = <
 &kp ESCAPE            &trans          &kp UP_ARROW    &trans           &trans          &trans  &trans    &mo 5           &kp MINUS       &kp LEFT_BRACKET
-&kp TAB               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans  &mkp MB1  &mkp MB2        &kp UP_ARROW    &kp RIGHT_BRACKET
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&trans                &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans          &trans          &kp RIGHT_SHIFT
+&kp TAB               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans  &mkp MB1  &mkp MB2        &trans          &kp RIGHT_BRACKET
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_SHIFT
+&trans                &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans          &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
