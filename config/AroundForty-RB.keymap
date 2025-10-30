@@ -58,28 +58,19 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q               &kp W           &kp E  &kp R  &kp T                       &kp Y        &kp U      &kp I      &kp O     &kp P
-&mt LEFT_CONTROL A  &kp S           &kp D  &kp F  &kp G                       &kp H        &kp J      &kp K      &kp L     &kp BACKSPACE
-&mt LEFT_SHIFT Z    &kp X           &kp C  &kp V  &kp B        &kp AMPERSAND  &kp N        &kp M      &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
-&kp LEFT_GUI        &lt 1 LEFT_ALT  &mo 2  &mo 2  &lt 1 LANG2  &mo 3          &lt 2 LANG1  &kp MINUS  &kp SPACE  &lt 6 AT  &lt 1 SLASH
-            >;
-        };
-
-        Mac-Function_Layer {
-            bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &none          &kp MINUS  &kp LEFT_BRACKET
-&trans           &trans             &trans    &trans      &trans               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PLUS   &kp RIGHT_BRACKET
-&trans           &trans             &trans    &trans      &trans       &trans  &trans                &trans                 &trans         &trans     &trans
-&trans           &trans             &trans    &trans      &trans       &trans  &trans                &kp SEMI               &trans         &trans     &trans
+&kp Q               &kp W         &kp E  &kp R  &kp T                       &kp Y      &kp U      &kp I      &kp O     &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D  &kp F  &kp G                       &kp H      &kp J      &kp K      &kp L     &kp BACKSPACE
+&mt LEFT_SHIFT Z    &kp X         &kp C  &kp V  &kp B        &kp AMPERSAND  &kp N      &kp M      &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
+&kp LEFT_GUI        &kp LEFT_ALT  &mo 1  &mo 1  &lt 2 LANG2  &mo 2          &kp LANG1  &kp MINUS  &kp SPACE  &lt 5 AT  &kp SLASH
             >;
         };
 
         Mac-Common_Layer {
             bindings = <
-&kp ESCAPE            &trans          &kp UP_ARROW    &trans           &trans          &trans  &trans    &mo 5           &kp MINUS       &kp LEFT_BRACKET
-&kp TAB               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans  &mkp MB1  &mkp MB2        &trans          &kp RIGHT_BRACKET
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)       &kp LG(C)       &kp LG(V)        &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_SHIFT
-&trans                &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans          &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp EXCL              &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT          &kp AMPERSAND         &kp SINGLE_QUOTE       &mo 4           &kp MINUS       &kp LEFT_BRACKET
+&kp TAB               &trans             &trans     &trans      &kp ESCAPE           &kp BACKSLASH         &mkp MB1               &mkp MB2        &kp PLUS        &kp RIGHT_BRACKET
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)          &kp LG(C)  &kp LG(V)   &trans       &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_SHIFT
+&trans                &trans             &trans     &trans      &trans       &trans  &trans                &kp SEMI               &trans          &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
         };
 
@@ -94,7 +85,7 @@
 
         Auto_Mouse_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &trans    &mo 5     &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &mo 4     &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
