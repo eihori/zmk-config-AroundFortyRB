@@ -10,13 +10,9 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
-    tapping-term-ms = <100>;
 };
 
-&lt {
-    tapping-term-ms = <100>;
-    flavor = "balanced";
-};
+&lt { tapping-term-ms = <250>; };
 
 / {
     combos { compatible = "zmk,combos"; };
