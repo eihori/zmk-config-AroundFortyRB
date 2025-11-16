@@ -95,6 +95,23 @@
             quick-tap-ms = <0>;
             bindings = <&mkp>, <&kp>;
         };
+
+        hl_mo_tap_key: hl_mo_tap_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HL_MO_TAP_KEY";
+
+            // 1つ目: レイヤー番号（&mo 用）
+            // 2つ目: キーコード（&kp 用）
+            #binding-cells = <2>;
+
+            // お好みで調整（さっきの hm_* と同じ設定でよいと思います）
+            flavor = "balanced";        // or "tap-preferred"
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+
+            // hold 側: &mo, tap 側: &kp
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
