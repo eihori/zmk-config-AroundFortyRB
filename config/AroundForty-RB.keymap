@@ -102,14 +102,17 @@
 
             // 1つ目: レイヤー番号（&mo 用）
             // 2つ目: キーコード（&kp 用）
+
             #binding-cells = <2>;
 
             // お好みで調整（さっきの hm_* と同じ設定でよいと思います）
+
             flavor = "balanced";        // or "tap-preferred"
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
 
             // hold 側: &mo, tap 側: &kp
+
             bindings = <&mo>, <&kp>;
         };
     };
@@ -119,7 +122,7 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Q               &kp W         &kp E              &kp R              &kp T                  &kp Y      &kp U                         &mh_mouse_hold_tap_key MB3 I  &kp O     &kp P
+&kp Q               &kp W         &kp E              &kp R              &kp T                  &kp Y      &kp U                         &hl_mo_tap_key 3 I            &kp O     &kp P
 &mt LEFT_CONTROL A  &kp S         &kp D              &kp F              &kp G                  &kp H      &mh_mouse_hold_tap_key MB1 J  &mh_mouse_hold_tap_key MB2 K  &kp L     &kp BACKSPACE
 &mt LEFT_SHIFT Z    &kp X         &kp C              &kp V              &kp B       &none      &kp N      &kp M                         &kp COMMA                     &kp DOT   &mt RIGHT_SHIFT ENTER
 &kp LEFT_GUI        &kp LEFT_ALT  &eisu_layer1_hold  &eisu_layer1_hold  &eisu_hold  &kp MINUS  &kp LANG1  &kp RCTRL                     &kp SPACE                     &lt 5 AT  &lt 4 SLASH
