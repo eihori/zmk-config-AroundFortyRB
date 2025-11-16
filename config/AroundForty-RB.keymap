@@ -85,6 +85,17 @@
 
             tap-ms = <20>;
         };
+
+        mh_mouse_hold_tap_key: mh_mouse_hold_tap_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MH_MOUSE_HOLD_TAP_KEY";
+            #binding-cells = <2>;          // 1: マウスボタン, 2: タップキー
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            bindings = <&mkp>, <&kp>;
+        };
+
     };
 
     keymap {
