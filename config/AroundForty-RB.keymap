@@ -87,17 +87,23 @@
         };
 
         /* 垂直方向の動きを ↑ / ↓ にする */
+
         arrows_ud: arrows_ud {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ARROWS_UD";
             #sensor-binding-cells = <0>;
+
             // 好みで調整（今の scrl_ud_inv と合わせて OK）
+
             tap-ms = <20>;
+
             // 正方向 / 負方向
+
             bindings = <&kp UP_ARROW>, <&kp DOWN_ARROW>;
         };
 
         /* 水平方向の動きを ← / → にする（使うなら）*/
+
         arrows_lr: arrows_lr {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ARROWS_LR";
@@ -145,16 +151,16 @@
 &kp Q               &kp W         &kp E              &kp R              &kp T                  &kp Y      &kp U      &kp I      &kp O     &kp P
 &mt LEFT_CONTROL A  &kp S         &kp D              &kp F              &kp G                  &kp H      &kp J      &kp K      &kp L     &kp BACKSPACE
 &mt LEFT_SHIFT Z    &kp X         &kp C              &kp V              &kp B       &none      &kp N      &kp M      &kp COMMA  &kp DOT   &mt RIGHT_SHIFT ENTER
-&kp LEFT_GUI        &kp LEFT_ALT  &eisu_layer1_hold  &eisu_layer1_hold  &eisu_hold  &kp MINUS  &kp LANG1  &kp RCTRL  &kp SPACE  &lt 5 AT  &lt 4 SLASH
+&kp LEFT_GUI        &kp LEFT_ALT  &eisu_layer1_hold  &eisu_layer1_hold  &eisu_hold  &kp MINUS  &kp LANG1  &kp RCTRL  &kp SPACE  &lt 6 AT  &lt 5 SLASH
             >;
         };
 
         Mac-Common_Layer {
             bindings = <
-&kp NUMBER_1          &kp NUMBER_2   &kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_5                         &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
-&kp TAB               &kp LG(LS(S))  &kp LG(LS(NUMBER_4))  &mo 3         &kp ESCAPE                           &kp EQUAL     &mkp MB1       &mkp MB2        &kp UP_ARROW    &kp SINGLE_QUOTE
-&mt LEFT_SHIFT LG(Z)  &kp LG(X)      &kp LG(C)             &kp LG(V)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW
-&trans                &trans         &trans                &trans        &trans            &trans             &trans        &kp SEMICOLON  &trans          &kp GRAVE       &kp BACKSLASH
+&kp NUMBER_1          &kp NUMBER_2   &kp NUMBER_3          &lt 4 NUMBER_4  &kp NUMBER_5                         &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0
+&kp TAB               &kp LG(LS(S))  &kp LG(LS(NUMBER_4))  &mo 3           &kp ESCAPE                           &kp EQUAL     &mkp MB1       &mkp MB2        &kp UP_ARROW    &kp SINGLE_QUOTE
+&mt LEFT_SHIFT LG(Z)  &kp LG(X)      &kp LG(C)             &kp LG(V)       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp PLUS       &kp LEFT_ARROW  &kp DOWN_ARROW  &mt RIGHT_SHIFT RIGHT_ARROW
+&trans                &trans         &trans                &trans          &trans            &trans             &trans        &kp SEMICOLON  &trans          &kp GRAVE       &kp BACKSLASH
             >;
         };
 
@@ -177,7 +183,6 @@
 
             sensor-bindings = <&scrl_ud_inv>;
         };
-
 
         Cursor_Layer {
             bindings = <
