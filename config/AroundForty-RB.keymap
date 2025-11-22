@@ -178,6 +178,18 @@
             sensor-bindings = <&scrl_ud_inv>;
         };
 
+
+        Cursor_Layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans          &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
+            >;
+
+            sensor-bindings = <&arrows_ud &arrows_lr>;
+        };
+
         Function_Layer {
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
