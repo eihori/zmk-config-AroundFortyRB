@@ -94,32 +94,6 @@
             tap-ms = <20>;
         };
 
-        /* 垂直方向の動きを ↑ / ↓ にする */
-
-        arrows_ud: arrows_ud {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ARROWS_UD";
-            #sensor-binding-cells = <0>;
-
-            // 好みで調整（今の scrl_ud_inv と合わせて OK）
-
-            tap-ms = <20>;
-
-            // 正方向 / 負方向
-
-            bindings = <&kp UP_ARROW>, <&kp DOWN_ARROW>;
-        };
-
-        /* 水平方向の動きを ← / → にする（使うなら）*/
-
-        arrows_lr: arrows_lr {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ARROWS_LR";
-            #sensor-binding-cells = <0>;
-            tap-ms = <20>;
-            bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>;
-        };
-
         mh_mouse_hold_tap_key: mh_mouse_hold_tap_key {
             compatible = "zmk,behavior-hold-tap";
             label = "MH_MOUSE_HOLD_TAP_KEY";
