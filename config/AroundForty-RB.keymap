@@ -104,13 +104,13 @@
             label = "BRACKET_CENTER_CURSOR";
         };
 
-        clause_cursor_center: clause_cursor_center {
+        than_cursor_center: than_cursor_center {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms  = <40>;
             bindings = <&kp LT &kp GT &kp LEFT_ARROW>;
-            label = "CLAUSE_CURSOR_CENTER";
+            label = "THAN_CURSOR_CENTER";
         };
 
     };
