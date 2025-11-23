@@ -89,6 +89,8 @@
         parenthesis_center_cursor: parenthesis_center_cursor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms  = <40>;
             bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
             label = "PARENTHESIS_CENTER_CURSOR";
         };
@@ -96,16 +98,21 @@
         bracket_center_cursor: bracket_center_cursor {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms  = <40>;
             bindings = <&kp LBKT &kp RBKT &kp LEFT_ARROW>;
             label = "BRACKET_CENTER_CURSOR";
         };
 
-        than_cursor_center: clause_cursor_center {
+        clause_cursor_center: clause_cursor_center {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+            wait-ms = <40>;
+            tap-ms  = <40>;
+            bindings = <&kp LT &kp GT &kp LEFT_ARROW>;
             label = "CLAUSE_CURSOR_CENTER";
         };
+
     };
 
     behaviors {
